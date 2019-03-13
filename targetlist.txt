@@ -1,0 +1,12 @@
+train/sig/open01.wav      train/mfcc/open01.mfcc
+train/sig/open02.wav      train/mfcc/open02.mfcc
+train/sig/open03.wav      train/mfcc/open03.mfcc
+train/sig/open04.wav      train/mfcc/open04.mfcc
+train/sig/open05.wav      train/mfcc/open05.mfcc
+train/sig/open06.wav      train/mfcc/open06.mfcc
+train/sig/open07.wav      train/mfcc/open07.mfcc
+train/sig/open08.wav      train/mfcc/open08.mfcc
+train/sig/open09.wav      train/mfcc/open09.mfcc
+train/sig/open10.wav      train/mfcc/open10.mfcc
+train/sig/open11.wav      train/mfcc/open11.mfcc
+train/sig/open12.wav      train/mfcc/open12.mfcc

@@ -1,0 +1,3 @@
+HInit -A -D -T 1 -S trainlist.txt -M model/hmm0 -H model/proto/hmm_open -l open -L train/lab open
+HCompV -A -D -T 1 -S trainlist.txt -M model/hmm0flat -H model/proto/hmm_open -f 0.01 open
+HRest -A -D -T 1 -S trainlist.txt -M model/hmmi -H vFloors -H model/hmmi-1/hmmfile -l label -L label_dir nameofhmm

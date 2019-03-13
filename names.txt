@@ -1,0 +1,13 @@
+A ah sp 
+A ax sp 
+A ey sp 
+CALL k ao l sp 
+DIAL d ay ax l sp 
+EIGHT ey t sp 
+PHONE f ow n sp 
+SENT-END [] sil 
+SENT-START [] sil 
+SEVEN s eh v n sp 
+TO t ax sp 
+TO t uw sp 
+ZERO z ia r ow sp 

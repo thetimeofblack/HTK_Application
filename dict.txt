@@ -1,0 +1,4 @@
+OPEN     [open]    open
+NO       [no]      no 
+START_SIL [sil]   sil 
+END_SIL   [sil]   sil 

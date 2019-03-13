@@ -1,0 +1,2 @@
+$WORD  = OPEN|CLOSE
+( {START_SIL} [$WORD] {END_SIL})

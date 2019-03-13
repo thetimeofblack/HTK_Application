@@ -1,0 +1,13 @@
+train/mfcc/open01.mfcc
+train/mfcc/open02.mfcc
+train/mfcc/open03.mfcc
+train/mfcc/open04.mfcc
+train/mfcc/open05.mfcc
+train/mfcc/open06.mfcc
+train/mfcc/open07.mfcc
+train/mfcc/open08.mfcc
+train/mfcc/open09.mfcc
+train/mfcc/open10.mfcc
+train/mfcc/open11.mfcc
+train/mfcc/open12.mfcc
+
