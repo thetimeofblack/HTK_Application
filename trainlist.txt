@@ -10,4 +10,26 @@ train/mfcc/open09.mfcc
 train/mfcc/open10.mfcc
 train/mfcc/open11.mfcc
 train/mfcc/open12.mfcc
+train/mfcc/close01.mfcc
+train/mfcc/close02.mfcc
+train/mfcc/close03.mfcc
+train/mfcc/close04.mfcc
+train/mfcc/close05.mfcc
+train/mfcc/close06.mfcc
+train/mfcc/close07.mfcc
+train/mfcc/close08.mfcc
+train/mfcc/close09.mfcc
+train/mfcc/close10.mfcc
+train/mfcc/close11.mfcc
+train/mfcc/close12.mfcc
+train/mfcc/sil01.mfcc
+train/mfcc/sil02.mfcc
+train/mfcc/sil03.mfcc
+train/mfcc/sil04.mfcc
+train/mfcc/sil05.mfcc
+
+
+
+
+
 

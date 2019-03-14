@@ -1,0 +1,2 @@
+test/sig/test.wav    test/mfcc/test.mfcc
+

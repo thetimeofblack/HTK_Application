@@ -1,3 +1,8 @@
+HCopy -A -D -C analysis.conf -S targetlist.txt
 HInit -A -D -T 1 -S trainlist.txt -M model/hmm0 -H model/proto/hmm_open -l open -L train/lab open
+HInit -A -D -T 1 -S trainlist.txt -M model/hmm0 -H model/proto/hmm_close -l close -L train/lab close
 HCompV -A -D -T 1 -S trainlist.txt -M model/hmm0flat -H model/proto/hmm_open -f 0.01 open
-HRest -A -D -T 1 -S trainlist.txt -M model/hmmi -H vFloors -H model/hmmi-1/hmmfile -l label -L label_dir nameofhmm
+HRest -A -D -T 1 -S trainlist.txt -M model/hmmi -H vFloors -H model/hmmi-1/hmmfile -l label -L label_dir nameofhm
+HParse -A -D -T 1 gram.txt net.slf 
+HVite -A -D -T 1 -H hmmsdef.mmf -i reco.mlf -w net.slf dict.txt 
+HRest -A -D -T 1 -S trainlist.txt -M model/hmm1 -H model/hmm0flat/hmm_open -H model/hmm0flat/vFloors -l open -L train/lab  open
