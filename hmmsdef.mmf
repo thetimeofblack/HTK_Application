@@ -1,6 +1,7 @@
-~h "hmm0"
+~o
+<STREAMINFO> 1 39
+<VECSIZE> 39<NULLD><MFCC_D_A_0><DIAGC>
 <BeginHMM> 
-	<VecSize> 39 <MFCC>
 	<NumStates> 6 
 	<State> 2
 		<Mean> 39 

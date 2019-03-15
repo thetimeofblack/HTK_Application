@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\model",
-    "\\model\\hmm0",
-    "\\train",
-    "\\train\\lab",
-    "\\train\\mfcc"
+    "\\model\\hmm3",
+    "\\model\\proto",
+    "\\test",
+    "\\test\\mfcc",
+    "\\train\\lab"
   ],
-  "SelectedNode": "\\train\\mfcc\\test_1.mfcc",
   "PreviewInSolutionExplorer": false
 }
