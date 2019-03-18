@@ -6,3 +6,4 @@ HRest -A -D -T 1 -S trainlist.txt -M model/hmmi -H vFloors -H model/hmmi-1/hmmfi
 HParse -A -D -T 1 gram.txt net.slf 
 HVite -A -D -T 1 -H hmmsdef.mmf -i reco.mlf -w net.slf dict.txt 
 HRest -A -D -T 1 -S trainlist.txt -M model/hmm1 -H model/hmm0flat/hmm_open -H model/hmm0flat/vFloors -l open -L train/lab  open
+HVite -A -D -T 1 -H hmmsdef.mmf -i reco.mlf -w net.slf dict.txt hmmlist.txt input.mfcc 

@@ -1,5 +1,3 @@
-model/hmm3/hmm_open
-
-model/hmm3/hmm_close
-
-model/hmm3/hmm_sil
+hmm_open
+hmm_close
+hmm_sil

@@ -1,0 +1,2 @@
+#generate the sentences samples from grammar SLF file and word list txt file 
+HSGen  (file with extension of slf of grammmar network file) and (file with extension of txt of word list file)

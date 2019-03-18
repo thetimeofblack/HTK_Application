@@ -1,0 +1,743 @@
+ Test Config File Read
+ =====================
+Parameter         Value
+-----------------------
+
+hsKind              p
+covKind             d
+nStreams            3
+nMixes              1 1 1
+Context             m
+TiedState           n
+VQ_clust            l
+HERest_Iter         3
+HERest_par_mode     n
+Clean_up            y
+Trace_tool_calls    y
+
+
+HCopy               n
+HList               n
+HQuant              n
+HLEd                n
+HInit               y
+HRest               y
+HERest              y
+HSmooth             n
+HVite               y
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+Cleaning up directories
+The system cannot find the path specified.
+Done cleaning
+"
+ Proto Config File Read
+ ======================
+Parameter         Value
+-----------------------
+
+hsKind              p
+covKind             d
+nStates             3
+nStreams            3
+sWidths             12 12 2
+mixes               1 1 1
+parmKind            MFCC_E_D
+vecSize             26
+outDir              proto
+hmmList             lists/bcplist
+
+
+Writing HMMSet
+
+Writing HMMDef to proto/S
+Writing HMMDef to proto/C
+Writing HMMDef to proto/V
+Writing HMMDef to proto/N
+Writing HMMDef to proto/L
+
+
+Calling HInit for HMM S
+HInit -A -i 10 -L labels\bcplabs\mon -l S -o S -C toolconfs\hinit.conf -D -M hmms\hmm.0 -T 1 -S train.scr proto/S
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Initialising  HMM proto/S . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  S
+ maxIter  :  10
+ epsilon  :  0.000100
+ minSeg   :  3
+ Updating :  Means Variances MixWeights/DProbs TransProbs
+
+ - system is PLAIN
+16 Observation Sequences Loaded
+Starting Estimation Process
+Iteration 1: Average LogP =  -804.22485
+Iteration 2: Average LogP =  -786.82166  Change =    17.40320
+Iteration 3: Average LogP =  -786.21503  Change =     0.60663
+Iteration 4: Average LogP =  -786.21497  Change =     0.00006
+Estimation converged at iteration 5
+Output written to directory hmms/hmm.0
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HInit for HMM C
+HInit -A -i 10 -L labels\bcplabs\mon -l C -o C -C toolconfs\hinit.conf -D -M hmms\hmm.0 -T 1 -S train.scr proto/C
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Initialising  HMM proto/C . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  C
+ maxIter  :  10
+ epsilon  :  0.000100
+ minSeg   :  3
+ Updating :  Means Variances MixWeights/DProbs TransProbs
+
+ - system is PLAIN
+90 Observation Sequences Loaded
+Starting Estimation Process
+Iteration 1: Average LogP =  -531.87140
+Iteration 2: Average LogP =  -527.31677  Change =     4.55463
+Iteration 3: Average LogP =  -526.60223  Change =     0.71454
+Iteration 4: Average LogP =  -526.32336  Change =     0.27887
+Iteration 5: Average LogP =  -526.26611  Change =     0.05725
+Iteration 6: Average LogP =  -526.24451  Change =     0.02161
+Iteration 7: Average LogP =  -526.23566  Change =     0.00885
+Iteration 8: Average LogP =  -526.23358  Change =     0.00208
+Iteration 9: Average LogP =  -526.22864  Change =     0.00494
+Iteration 10: Average LogP =  -526.22864  Change =     0.00000
+Estimation converged at iteration 11
+Output written to directory hmms/hmm.0
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HInit for HMM V
+HInit -A -i 10 -L labels\bcplabs\mon -l V -o V -C toolconfs\hinit.conf -D -M hmms\hmm.0 -T 1 -S train.scr proto/V
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Initialising  HMM proto/V . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  V
+ maxIter  :  10
+ epsilon  :  0.000100
+ minSeg   :  3
+ Updating :  Means Variances MixWeights/DProbs TransProbs
+
+ - system is PLAIN
+68 Observation Sequences Loaded
+Starting Estimation Process
+Iteration 1: Average LogP =  -599.68665
+Iteration 2: Average LogP =  -592.98315  Change =     6.70349
+Iteration 3: Average LogP =  -592.21436  Change =     0.76880
+Iteration 4: Average LogP =  -591.48163  Change =     0.73273
+Iteration 5: Average LogP =  -591.14319  Change =     0.33844
+Iteration 6: Average LogP =  -591.08783  Change =     0.05536
+Iteration 7: Average LogP =  -591.04993  Change =     0.03790
+Iteration 8: Average LogP =  -590.98999  Change =     0.05994
+Iteration 9: Average LogP =  -590.98560  Change =     0.00439
+Iteration 10: Average LogP =  -590.98560  Change =     0.00000
+Estimation converged at iteration 11
+Output written to directory hmms/hmm.0
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HInit for HMM N
+HInit -A -i 10 -L labels\bcplabs\mon -l N -o N -C toolconfs\hinit.conf -D -M hmms\hmm.0 -T 1 -S train.scr proto/N
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Initialising  HMM proto/N . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  N
+ maxIter  :  10
+ epsilon  :  0.000100
+ minSeg   :  3
+ Updating :  Means Variances MixWeights/DProbs TransProbs
+
+ - system is PLAIN
+16 Observation Sequences Loaded
+Starting Estimation Process
+Iteration 1: Average LogP =  -398.18738
+Iteration 2: Average LogP =  -395.48718  Change =     2.70020
+Iteration 3: Average LogP =  -395.26947  Change =     0.21771
+Iteration 4: Average LogP =  -395.17661  Change =     0.09286
+Iteration 5: Average LogP =  -395.17661  Change =     0.00000
+Estimation converged at iteration 6
+Output written to directory hmms/hmm.0
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HInit for HMM L
+HInit -A -i 10 -L labels\bcplabs\mon -l L -o L -C toolconfs\hinit.conf -D -M hmms\hmm.0 -T 1 -S train.scr proto/L
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Initialising  HMM proto/L . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  L
+ maxIter  :  10
+ epsilon  :  0.000100
+ minSeg   :  3
+ Updating :  Means Variances MixWeights/DProbs TransProbs
+
+ - system is PLAIN
+25 Observation Sequences Loaded
+Starting Estimation Process
+Iteration 1: Average LogP =  -424.39636
+Iteration 2: Average LogP =  -420.31281  Change =     4.08356
+Iteration 3: Average LogP =  -419.43475  Change =     0.87805
+Iteration 4: Average LogP =  -419.35437  Change =     0.08038
+Iteration 5: Average LogP =  -419.32385  Change =     0.03052
+Iteration 6: Average LogP =  -419.32385  Change =     0.00000
+Estimation converged at iteration 7
+Output written to directory hmms/hmm.0
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HRest for HMM S
+HRest -A -u tmvw -w 3 -v 0.05 -i 10 -L labels\bcplabs\mon -l S -C toolconfs\hrest.conf -D -M hmms\hmm.1 -T 1 -S train.scr hmms\hmm.0\S
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Reestimating HMM hmms/hmm.0/S . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  S
+ MaxIter  :  10
+ Epsilon  :  0.000100
+ Updating :  Transitions Means Variances
+
+ - system is PLAIN
+16 Examples loaded, Max length = 20, Min length = 13
+Ave LogProb at iter 1 = -785.97742 using 16 examples
+Ave LogProb at iter 2 = -799.75989 using 16 examples  change =  -13.78247
+Ave LogProb at iter 3 = -799.59253 using 16 examples  change =    0.16736
+Ave LogProb at iter 4 = -799.49408 using 16 examples  change =    0.09845
+Ave LogProb at iter 5 = -799.43402 using 16 examples  change =    0.06006
+Ave LogProb at iter 6 = -799.36902 using 16 examples  change =    0.06500
+Ave LogProb at iter 7 = -799.31213 using 16 examples  change =    0.05688
+Ave LogProb at iter 8 = -799.28638 using 16 examples  change =    0.02576
+Ave LogProb at iter 9 = -799.26794 using 16 examples  change =    0.01843
+Ave LogProb at iter 10 = -798.93457 using 16 examples  change =    0.33337
+Estimation aborted at iteration 10
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HRest for HMM C
+HRest -A -u tmvw -w 3 -v 0.05 -i 10 -L labels\bcplabs\mon -l C -C toolconfs\hrest.conf -D -M hmms\hmm.1 -T 1 -S train.scr hmms\hmm.0\C
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Reestimating HMM hmms/hmm.0/C . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  C
+ MaxIter  :  10
+ Epsilon  :  0.000100
+ Updating :  Transitions Means Variances
+
+ - system is PLAIN
+90 Examples loaded, Max length = 25, Min length = 3
+Ave LogProb at iter 1 = -525.97858 using 90 examples
+Ave LogProb at iter 2 = -530.95636 using 90 examples  change =   -4.97778
+Ave LogProb at iter 3 = -530.95367 using 90 examples  change =    0.00269
+Ave LogProb at iter 4 = -530.95313 using 90 examples  change =    0.00055
+Ave LogProb at iter 5 = -530.95306 using 90 examples  change =    0.00006
+Estimation converged at iteration 5
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HRest for HMM V
+HRest -A -u tmvw -w 3 -v 0.05 -i 10 -L labels\bcplabs\mon -l V -C toolconfs\hrest.conf -D -M hmms\hmm.1 -T 1 -S train.scr hmms\hmm.0\V
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Reestimating HMM hmms/hmm.0/V . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  V
+ MaxIter  :  10
+ Epsilon  :  0.000100
+ Updating :  Transitions Means Variances
+
+ - system is PLAIN
+68 Examples loaded, Max length = 28, Min length = 3
+Ave LogProb at iter 1 = -590.79449 using 68 examples
+Ave LogProb at iter 2 = -600.09357 using 68 examples  change =   -9.29907
+Ave LogProb at iter 3 = -600.08228 using 68 examples  change =    0.01129
+Ave LogProb at iter 4 = -600.07574 using 68 examples  change =    0.00653
+Ave LogProb at iter 5 = -600.07074 using 68 examples  change =    0.00500
+Ave LogProb at iter 6 = -600.06866 using 68 examples  change =    0.00208
+Ave LogProb at iter 7 = -600.06824 using 68 examples  change =    0.00043
+Ave LogProb at iter 8 = -600.06818 using 68 examples  change =    0.00006
+Estimation converged at iteration 8
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HRest for HMM N
+HRest -A -u tmvw -w 3 -v 0.05 -i 10 -L labels\bcplabs\mon -l N -C toolconfs\hrest.conf -D -M hmms\hmm.1 -T 1 -S train.scr hmms\hmm.0\N
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Reestimating HMM hmms/hmm.0/N . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  N
+ MaxIter  :  10
+ Epsilon  :  0.000100
+ Updating :  Transitions Means Variances
+
+ - system is PLAIN
+16 Examples loaded, Max length = 13, Min length = 4
+Ave LogProb at iter 1 = -395.06061 using 16 examples
+Ave LogProb at iter 2 = -403.25293 using 16 examples  change =   -8.19232
+Ave LogProb at iter 3 = -403.23053 using 16 examples  change =    0.02240
+Ave LogProb at iter 4 = -403.20828 using 16 examples  change =    0.02225
+Ave LogProb at iter 5 = -403.19427 using 16 examples  change =    0.01401
+Ave LogProb at iter 6 = -403.19073 using 16 examples  change =    0.00354
+Ave LogProb at iter 7 = -403.18997 using 16 examples  change =    0.00076
+Ave LogProb at iter 8 = -403.18973 using 16 examples  change =    0.00024
+Ave LogProb at iter 9 = -403.18973 using 16 examples  change =    0.00000
+Estimation converged at iteration 9
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Calling HRest for HMM L
+HRest -A -u tmvw -w 3 -v 0.05 -i 10 -L labels\bcplabs\mon -l L -C toolconfs\hrest.conf -D -M hmms\hmm.1 -T 1 -S train.scr hmms\hmm.0\L
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Reestimating HMM hmms/hmm.0/L . . .
+ States   :   2  3  4 (width)
+ Mixes  s1:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s2:   1  1  1 ( 12  )
+ Num Using:   0  0  0
+ Mixes  s3:   1  1  1 (  2  )
+ Num Using:   0  0  0
+ Parm Kind:  MFCC_E_D
+ Number of owners = 1
+ SegLab   :  L
+ MaxIter  :  10
+ Epsilon  :  0.000100
+ Updating :  Transitions Means Variances
+
+ - system is PLAIN
+25 Examples loaded, Max length = 14, Min length = 4
+Ave LogProb at iter 1 = -419.20462 using 25 examples
+Ave LogProb at iter 2 = -425.78470 using 25 examples  change =   -6.58008
+Ave LogProb at iter 3 = -425.76199 using 25 examples  change =    0.02271
+Ave LogProb at iter 4 = -425.74527 using 25 examples  change =    0.01672
+Ave LogProb at iter 5 = -425.73099 using 25 examples  change =    0.01428
+Ave LogProb at iter 6 = -425.72141 using 25 examples  change =    0.00958
+Ave LogProb at iter 7 = -425.71652 using 25 examples  change =    0.00488
+Ave LogProb at iter 8 = -425.71375 using 25 examples  change =    0.00278
+Ave LogProb at iter 9 = -425.71167 using 25 examples  change =    0.00208
+Ave LogProb at iter 10 = -425.71005 using 25 examples  change =    0.00162
+Estimation aborted at iteration 10
+
+HTK Configuration Parameters[3]
+  Module/Tool     Parameter                  Value
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+
+
+Iteration 1 of Embedded Re-estimation
+HERest -A -w 3 -v 0.05 -C toolconfs\herest.conf -u tmvw -d hmms\hmm.1 -D -M hmms\hmm.2 -L labels\bcplabs\mon -t 2000.0 -T 1 -S train.scr lists\bcplist
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT              TRUE
+#                 KEEPDISTINCT                TRUE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+HERest  ML Updating: Transitions Means Variances
+
+ System is PLAIN
+5 Logical/5 Physical Models Loaded, VecSize=26
+Pruning-On[2000.0]
+ Processing Data: tr1.mfc; Label tr1.lab
+ Utterance prob per frame = -5.980291e+01
+ Processing Data: tr2.mfc; Label tr2.lab
+ Utterance prob per frame = -5.937590e+01
+ Processing Data: tr3.mfc; Label tr3.lab
+ Utterance prob per frame = -5.935560e+01
+ Processing Data: tr4.mfc; Label tr4.lab
+ Utterance prob per frame = -5.919725e+01
+ Processing Data: tr5.mfc; Label tr5.lab
+ Utterance prob per frame = -5.789516e+01
+ Processing Data: tr6.mfc; Label tr6.lab
+ Utterance prob per frame = -5.910776e+01
+ Processing Data: tr7.mfc; Label tr7.lab
+ Utterance prob per frame = -5.739421e+01
+Total 27 floored variance elements in 15 different mixes
+Saving hmm's to dir hmms\hmm.2
+Reestimation complete - average log prob per frame = -5.900194e+01
+     - total frames seen          = 1.811000e+03
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+                  BINARYACCFORMAT              TRUE
+                  KEEPDISTINCT                TRUE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+hmms\hmm.2\C
+hmms\hmm.2\L
+hmms\hmm.2\N
+hmms\hmm.2\S
+hmms\hmm.2\V
+        5 file(s) copied.
+
+
+Iteration 2 of Embedded Re-estimation
+HERest -A -w 3 -v 0.05 -C toolconfs\herest.conf -u tmvw -d hmms\tmp -D -M hmms\hmm.2 -L labels\bcplabs\mon -t 2000.0 -T 1 -S train.scr lists\bcplist
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT              TRUE
+#                 KEEPDISTINCT                TRUE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+HERest  ML Updating: Transitions Means Variances
+
+ System is PLAIN
+5 Logical/5 Physical Models Loaded, VecSize=26
+Pruning-On[2000.0]
+ Processing Data: tr1.mfc; Label tr1.lab
+ Utterance prob per frame = -5.965326e+01
+ Processing Data: tr2.mfc; Label tr2.lab
+ Utterance prob per frame = -5.907248e+01
+ Processing Data: tr3.mfc; Label tr3.lab
+ Utterance prob per frame = -5.916422e+01
+ Processing Data: tr4.mfc; Label tr4.lab
+ Utterance prob per frame = -5.911171e+01
+ Processing Data: tr5.mfc; Label tr5.lab
+ Utterance prob per frame = -5.751575e+01
+ Processing Data: tr6.mfc; Label tr6.lab
+ Utterance prob per frame = -5.889637e+01
+ Processing Data: tr7.mfc; Label tr7.lab
+ Utterance prob per frame = -5.734809e+01
+Total 27 floored variance elements in 15 different mixes
+Saving hmm's to dir hmms\hmm.2
+Reestimation complete - average log prob per frame = -5.879905e+01
+     - total frames seen          = 1.811000e+03
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+                  BINARYACCFORMAT              TRUE
+                  KEEPDISTINCT                TRUE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+hmms\hmm.2\C
+hmms\hmm.2\L
+hmms\hmm.2\N
+hmms\hmm.2\S
+hmms\hmm.2\V
+        5 file(s) copied.
+
+
+Iteration 3 of Embedded Re-estimation
+HERest -A -w 3 -v 0.05 -C toolconfs\herest.conf -u tmvw -d hmms\tmp -D -M hmms\hmm.2 -L labels\bcplabs\mon -t 2000.0 -T 1 -S train.scr lists\bcplist
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT              TRUE
+#                 KEEPDISTINCT                TRUE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+HERest  ML Updating: Transitions Means Variances
+
+ System is PLAIN
+5 Logical/5 Physical Models Loaded, VecSize=26
+Pruning-On[2000.0]
+ Processing Data: tr1.mfc; Label tr1.lab
+ Utterance prob per frame = -5.961525e+01
+ Processing Data: tr2.mfc; Label tr2.lab
+ Utterance prob per frame = -5.901978e+01
+ Processing Data: tr3.mfc; Label tr3.lab
+ Utterance prob per frame = -5.908330e+01
+ Processing Data: tr4.mfc; Label tr4.lab
+ Utterance prob per frame = -5.905582e+01
+ Processing Data: tr5.mfc; Label tr5.lab
+ Utterance prob per frame = -5.741739e+01
+ Processing Data: tr6.mfc; Label tr6.lab
+ Utterance prob per frame = -5.880339e+01
+ Processing Data: tr7.mfc; Label tr7.lab
+ Utterance prob per frame = -5.738405e+01
+Total 26 floored variance elements in 15 different mixes
+Saving hmm's to dir hmms\hmm.2
+Reestimation complete - average log prob per frame = -5.874363e+01
+     - total frames seen          = 1.811000e+03
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+                  BINARYACCFORMAT              TRUE
+                  KEEPDISTINCT                TRUE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+hmms\hmm.2\C
+hmms\hmm.2\L
+hmms\hmm.2\N
+hmms\hmm.2\S
+hmms\hmm.2\V
+        5 file(s) copied.
+
+Testing on the training set
+HVite -A -C toolconfs\hvite.conf -d hmms\hmm.2 -l test -i recout.mlf -w networks\monLattice -D -L test -t 300.0 -T 1 -p 5.0 -s 0.0 -S train.scr lists\bcpvocab lists\bcplist
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT             FALSE
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Read 5 physical / 5 logical HMMs
+Read lattice with 8 nodes / 16 arcs
+Created network with 15 nodes / 23 links
+File: data\train\tr1.mfc
+S C V C V C C V C C V C N C V V C L V C C L V L L V C V L S  ==  [303 frames] -58.4550 [Ac=-17866.9 LM=155.0] (Act=12.9)
+File: data\train\tr2.mfc
+S L V N C L V C V L C S V C C V C L V N V N C L C S C C C V S N C V N V C V C S C S  ==  [381 frames] -57.9612 [Ac=-22298.2 LM=215.0] (Act=13.0)
+File: data\train\tr3.mfc
+S C C V C C V N C V C V C C V N V C C L V C V C C V C L S  ==  [266 frames] -57.8991 [Ac=-15551.2 LM=150.0] (Act=12.9)
+File: data\train\tr4.mfc
+S V C V N V V C C V V C V C V C C C N V N V C V C S  ==  [241 frames] -58.2675 [Ac=-14177.5 LM=135.0] (Act=12.9)
+File: data\train\tr5.mfc
+S L L L L V C L C L V N N L V C V C V S S  ==  [214 frames] -56.2733 [Ac=-12152.5 LM=110.0] (Act=12.9)
+File: data\train\tr6.mfc
+S C V C L V C S C V C C V S C N C N L C V C S  ==  [212 frames] -57.8863 [Ac=-12391.9 LM=120.0] (Act=12.9)
+File: data\train\tr7.mfc
+S C V C V N C C C L V C V C V C S  ==  [194 frames] -56.5175 [Ac=-11054.4 LM=90.0] (Act=12.9)
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT             FALSE
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+HResults -A -s -L labels\bcplabs\mon lists\bcplist recout.mlf
+====================== HTK Results Analysis =======================
+  Date: Tue Mar 19 00:14:40 2019
+  Ref : labels/bcplabs/mon
+  Rec : recout.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=0.00 [H=0, S=7, N=7]
+WORD: %Corr=77.63, Acc=74.89 [H=170, D=37, S=12, I=6, N=219]
+===================================================================
+
+Testing on the test set
+HVite -A -C toolconfs\hvite.conf -d hmms\hmm.2 -l test -i recout.mlf -w networks\monLattice -D -L test -t 300.0 -T 1 -p 5.0 -s 0.0 -S test.scr lists\bcpvocab lists\bcplist
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT             FALSE
+#                 KEEPDISTINCT               FALSE
+#                 SAVEGLOBOPTS                TRUE
+#                 TARGETKIND              MFCC_E_D
+
+Read 5 physical / 5 logical HMMs
+Read lattice with 8 nodes / 16 arcs
+Created network with 15 nodes / 23 links
+File: data\test\te1.mfc
+S C V N V C C V C C C V N C V L V L V C L V C C C V S C S  ==  [246 frames] -59.5259 [Ac=-14793.4 LM=150.0] (Act=12.9)
+File: data\test\te2.mfc
+S L C V C V C C V C N C N V V L V V N N C N S V V C V C C V C C V C C C  ==  [278 frames] -59.6481 [Ac=-16767.2 LM=185.0] (Act=12.9)
+File: data\test\te3.mfc
+S C V C C V C L L C V S C V N V C V C L V C C S V N C V C N V C V L N L S C S  ==  [418 frames] -58.6500 [Ac=-24715.7 LM=200.0] (Act=13.0)
+
+HTK Configuration Parameters[4]
+  Module/Tool     Parameter                  Value
+#                 BINARYACCFORMAT             FALSE
+                  KEEPDISTINCT               FALSE
+                  SAVEGLOBOPTS                TRUE
+                  TARGETKIND              MFCC_E_D
+
+HResults -A -s -L labels\bcplabs\mon lists\bcplist recout.mlf
+====================== HTK Results Analysis =======================
+  Date: Tue Mar 19 00:14:41 2019
+  Ref : labels/bcplabs/mon
+  Rec : recout.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=0.00 [H=0, S=3, N=3]
+WORD: %Corr=63.91, Acc=59.40 [H=85, D=35, S=13, I=6, N=133]
+===================================================================

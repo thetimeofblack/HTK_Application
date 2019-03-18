@@ -1,4 +1,4 @@
 OPEN     [open]    open
 CLOSE       [close]      close 
-START_SIL [sil]   sil 
-END_SIL   [sil]   sil 
+START_SIL  [sil]   sil 
+END_SIL    [sil]   sil 
