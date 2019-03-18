@@ -1,2 +1,4 @@
-#generate the sentences samples from grammar SLF file and word list txt file 
+﻿#generate the sentences samples from grammar SLF file and word list txt file 
 HSGen  (file with extension of slf of grammmar network file) and (file with extension of txt of word list file)
+HVite 
+-d dir This speciﬁes the directory to search for the HMM deﬁnition ﬁles corresponding to the labels used in the recognition network.

@@ -7,3 +7,5 @@ HParse -A -D -T 1 gram.txt net.slf
 HVite -A -D -T 1 -H hmmsdef.mmf -i reco.mlf -w net.slf dict.txt 
 HRest -A -D -T 1 -S trainlist.txt -M model/hmm1 -H model/hmm0flat/hmm_open -H model/hmm0flat/vFloors -l open -L train/lab  open
 HVite -A -D -T 1 -H hmmsdef.mmf -i reco.mlf -w net.slf dict.txt hmmlist.txt input.mfcc 
+HVite -A -C toolconfs\hvite.conf -d hmms\hmm.2 -l test -i recout.mlf -w networks\monLattice -D -L test -t 300.0 -T 1 -p 5.0 -s 0.0 -S train.scr lists\bcpvocab lists\bcplist
+HVite -A -C direction.conf -d model\hmm3 -l test -i recout.mlf -w net.slf -D -L test -t 300.0 -T 1 -p 5.0 -s 0.0 -S test.scp dict.txt hmmlist.txt
